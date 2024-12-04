@@ -1,0 +1,212 @@
+body {
+  background-color: #16130e;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  position: relative;
+  width: 1920px; /* Demonstration purposes */
+  height: 1080px;
+}
+
+/* Persistent Header */
+#header {
+  position: absolute;
+  left: -3px;
+  top: 75px;
+  width: 1920px;
+  height: 9px;
+  background-image: url('./images/header.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Persistent Logo */
+#logo-button {
+  position: absolute;
+  left: 31px;
+  top: 7px;
+  width: 60px;
+  height: 61px;
+  background-image: url('./images/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+/* Logo Spin Effect on Hover */
+#logo-button:hover {
+  animation: spin infinite 2s linear;
+  transform: scale(1.2); /* Enlarge the logo when hovered */
+}
+
+/* Disable background highlight for logo button on hover */
+#logo-button:hover {
+  background-color: transparent;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg) scale(1.2);
+  }
+  to {
+    transform: rotate(360deg) scale(1.2);
+  }
+}
+
+/* Navigation Buttons */
+#ui-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Button Images and Positioning */
+#schedule-button {
+  position: absolute;
+  left: 200px;
+  top: 25px;
+  width: 154.37px;
+  height: 33.85px;
+  background-image: url('./images/schedule_button.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Define each button similarly, ensuring unique positioning */
+#contact-button {
+  position: absolute;
+  left: 445px;
+  top: 25px;
+  width: 138.13px;
+  height: 33.85px;
+  background-image: url('./images/contact_button.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#about-button {
+  position: absolute;
+  left: 677px;
+  top: 25px;
+  width: 104.35px;
+  height: 34px;
+  background-image: url('./images/about_button.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#register-button {
+  position: absolute;
+  left: 880px;
+  top: 25px;
+  width: 143.04px;
+  height: 33.85px;
+  background-image: url('./images/register_button.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#location-button {
+  position: absolute;
+  left: 1120px;
+  top: 25px;
+  width: 150.74px;
+  height: 33.85px;
+  background-image: url('./images/location_button.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#emanual-button {
+  position: absolute;
+  left: 1371.78px;
+  top: 25px;
+  width: 161.54px;
+  height: 33.85px;
+  background-image: url('./images/emanual_button.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#testimonies-button {
+  position: absolute;
+  left: 1610.45px;
+  top: 25px;
+  width: 198.2px;
+  height: 33.85px;
+  background-image: url('./images/testimonies_button.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Button Hover Effects */
+button:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Button Click Effects */
+button:active {
+  transform: scale(0.9);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Exclude logo button from hover highlight */
+#logo-button:hover {
+  background-color: transparent; /* No background highlight on hover for logo */
+}
+
+
+
+
+/* ===== Google Calendar Embed Styles ===== */
+.calendar-container {
+  position: absolute; /* Allows precise positioning using top, left, right, bottom */
+  top: 100px; /* Adjust this to move the calendar vertically */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset for centering */
+  width: 100%; /* Ensure container spans full width */
+  height: auto; /* Let height adjust naturally */
+}
+
+.calendar-iframe {
+  width: 1920px; /* Adjust width as needed */
+  height: 800px; /* Adjust height as needed */
+  border: none; /* Remove border around iframe */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow for style */
+}
+
+#background-container {
+  position: absolute;
+  top: 80px; /* Adjust vertical position */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  width: 1920px; /* Set default width */
+  height: 1080px; /* Set default height */
+  background-image: url('./images/background2.png'); /* Replace with your image */
+  background-size: cover; /* Adjust image size */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-position: center; /* Default positioning */
+  z-index: 0; /* Behind all content */
+}

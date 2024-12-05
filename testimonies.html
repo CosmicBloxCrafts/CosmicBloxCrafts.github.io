@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scarlet Summer Sports - Testimonials</title>
+</head>
+<body>
+    <!-- Persistent Header -->
+    <div id="header"></div>
+
+    <!-- Persistent Logo -->
+    <a href="index.html" id="logo-link">
+        <div id="logo-button"></div>
+    </a>
+
+    <!-- Navigation Buttons -->
+    <div id="ui-container">
+        <a href="index.html" class="nav-link"><button id="logo-button"></button></a>
+        <a href="schedule.html" class="nav-link"><button id="schedule-button"></button></a>
+        <a href="contact.html" class="nav-link"><button id="contact-button"></button></a>
+        <a href="about.html" class="nav-link"><button id="about-button"></button></a>
+        <a href="register.html" class="nav-link"><button id="register-button"></button></a>
+        <a href="location.html" class="nav-link"><button id="location-button"></button></a>
+        <a href="emanual.html" class="nav-link"><button id="emanual-button"></button></a>
+        <a href="testimonies.html" class="nav-link"><button id="testimonies-button"></button></a>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials-container">
+        <h1>What People Are Saying</h1>
+
+        <!-- Filter Reviews -->
+        <div class="filter">
+            <label for="rating-filter">Filter by rating:</label>
+            <select id="rating-filter">
+                <option value="all">All Ratings</option>
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+            </select>
+        </div>
+
+        <!-- Reviews Section -->
+        <div id="reviews">
+            <!-- Example Reviews -->
+            <div class="review" data-rating="5">
+                <p><strong>John Doe</strong> - "This was a fantastic experience!"</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="review" data-rating="4">
+                <p><strong>Jane Smith</strong> - "Great camp! Could use more snacks."</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="review" data-rating="3">
+                <p><strong>Chris Johnson</strong> - "Good overall but lacked variety."</p>
+                <div class="stars">★★★☆☆</div>
+            </div>
+            <div class="review" data-rating="5">
+                <p><strong>Emily Davis</strong> - "Absolutely loved it! Highly recommend."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="review" data-rating="2">
+                <p><strong>Michael Brown</strong> - "It was okay, but too crowded."</p>
+                <div class="stars">★★☆☆☆</div>
+            </div>
+        </div>
+
+        <!-- Submit New Review -->
+        <div class="submit-review">
+            <h2>Submit Your Testimonial</h2>
+            <form id="review-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <textarea id="review-text" placeholder="Your Review" required></textarea>
+                <label for="rating">Your Rating:</label>
+                <select id="rating">
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -627,80 +627,319 @@ form button:hover {
 
 
 
-
 /* ===== General Page Styles ===== */
 body {
   background-color: #16130e;
-  color: white;
   font-family: Arial, sans-serif;
   margin: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-/* ===== Registration Cards ===== */
-.registration-container {
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap if screen size changes */
-  justify-content: center;
-  align-items: flex-start;
-  gap: 50px; /* Space between cards */
-  padding: 50px;
-  top: 100px;
-  left: 5%;
-}
-
-/* Individual Card */
-.register-card {
-  position: absolute;
-  width: 225px;
-  height: 343.82px;
-  text-align: center;
-}
-
-/* Card Image */
-.card-image {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  transition: box-shadow 0.3s ease;
-}
-
-.card-image:hover {
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
-}
-
-/* Card Info Section */
-.card-info {
-  position: absolute;
-  top: 170px; /* Adjust as needed */
-  width: 100%;
-  text-align: center;
-}
-
-.card-icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 5px;
-}
-
-.card-text {
-  font-size: 14px;
-  font-weight: bold;
   color: white;
 }
 
-/* Register Button */
-.register-button {
-  width: 80%;
-  margin-top: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+/* ===== Sports Box and Button Styles ===== */
+
+/* Football Box */
+#football-icon {
   position: absolute;
-  top: 240px;
-  left: 10%;
+  top: 100px; /* Adjust vertical position */
+  left: 50px; /* Adjust horizontal position */
+  width: 178px; /* Adjust size */
+  height: 272px;
+  background-image: url('./images/sports_register/footballcard.png'); /* Default image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: background-image 0.3s ease-in-out; /* Smooth transition */
+  z-index: 1;
 }
 
-.register-button:hover {
-  transform: scale(1.05);
+#football-icon:hover {
+  background-image: url('./images/sports_register/footballcard2.png'); /* Hover image */
 }
+
+/* Football Register Button */
+#football-register {
+  position: absolute;
+  top: 210px; /* Adjust vertical position */
+  left: 10px; /* Adjust horizontal position */
+  width: 152px; /* Adjust size */
+  height: 41px;
+  background-image: url('./images/register_clickable.png'); /* Default button image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: background-image 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+}
+
+#football-register:hover {
+  background-image: url('./images/register_clickabled.png'); /* Hover button image */
+  transform: scale(1.1);
+}
+
+/* Basketball Box */
+#basketball-icon {
+  position: absolute;
+  top: 100px; /* Adjust vertical position */
+  left: 300px; /* Adjust horizontal position */
+  width: 178px;
+  height: 272px;
+  background-image: url('./images/sports_register/basketballcard.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: background-image 0.3s ease-in-out;
+  z-index: 1;
+}
+
+#basketball-icon:hover {
+  background-image: url('./images/sports_register/basketballcard2.png');
+}
+
+/* Basketball Register Button */
+#basketball-register {
+  position: absolute;
+  top: 210px;
+  left: 10px;
+  width: 152px;
+  height: 41px;
+  background-image: url('./images/register_clickable.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: background-image 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+}
+
+#basketball-register:hover {
+  background-image: url('./images/register_clickabled.png');
+  transform: scale(1.1);
+}
+
+/* Netball Box */
+#netball-icon {
+  position: absolute;
+  top: 100px;
+  left: 550px;
+  width: 178px;
+  height: 272px;
+  background-image: url('./images/sports_register/netballcard.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: background-image 0.3s ease-in-out;
+  z-index: 1;
+}
+
+#netball-icon:hover {
+  background-image: url('./images/sports_register/netballcard2.png');
+}
+
+/* Netball Register Button */
+#netball-register {
+  position: absolute;
+  top: 210px;
+  left: 10px;
+  width: 152px;
+  height: 41px;
+  background-image: url('./images/register_clickable.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: background-image 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+}
+
+#netball-register:hover {
+  background-image: url('./images/register_clickabled.png');
+  transform: scale(1.1);
+}
+
+/* Cricket Box */
+#cricket-icon {
+  position: absolute;
+  top: 100px;
+  left: 800px;
+  width: 178px;
+  height: 272px;
+  background-image: url('./images/sports_register/cricketcard.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: background-image 0.3s ease-in-out;
+  z-index: 1;
+}
+
+#cricket-icon:hover {
+  background-image: url('./images/sports_register/cricketcard2.png');
+}
+
+/* Cricket Register Button */
+#cricket-register {
+  position: absolute;
+  top: 210px;
+  left: 10px;
+  width: 152px;
+  height: 41px;
+  background-image: url('./images/register_clickable.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: background-image 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+}
+
+#cricket-register:hover {
+  background-image: url('./images/register_clickabled.png');
+  transform: scale(1.1);
+}
+
+/* Swimming Box */
+#swimming-icon {
+  position: absolute;
+  top: 100px;
+  left: 1050px;
+  width: 178px;
+  height: 272px;
+  background-image: url('./images/sports_register/swimmingcard.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: background-image 0.3s ease-in-out;
+  z-index: 1;
+}
+
+#swimming-icon:hover {
+  background-image: url('./images/sports_register/swimmingcard2.png');
+}
+
+/* Swimming Register Button */
+#swimming-register {
+  position: absolute;
+  top: 210px;
+  left: 10px;
+  width: 152px;
+  height: 41px;
+  background-image: url('./images/register_clickable.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: background-image 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+}
+
+#swimming-register:hover {
+  background-image: url('./images/register_clickabled.png');
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+/* ===== General Text Styling ===== */
+body {
+  
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+}
+
+/* ===== Welcome Section ===== */
+.welcome-section {
+  margin-top: 100px;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  top: 10px;
+  left: 550px
+}
+
+.welcome-section h1 {
+  font-size: 3rem;
+  color: #f0a500;
+  margin-bottom: 10px;
+  position: absolute;
+  top:10p0x;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  max-width: 800px;
+  position: relative;
+  top: 100px;
+}
+
+/* ===== Action Buttons ===== */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  position: absolute;
+  top:300px;
+  left: 650px;
+}
+
+.animated-button {
+  text-decoration: none;
+  background-color: #6d0a0a;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.animated-button:hover {
+  background-color: #ee1e1e;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== Testimonials Preview ===== */
+.testimonials-preview {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.testimonials-preview h2 {
+  font-size: 2rem;
+  color: #0287f3;
+  margin-bottom: 10px;
+  position: relative;
+  top: -60px;
+  left: 0px;
+
+}
+
+.testimonials-preview p {
+  font-size: 1.1rem;
+  margin: 5px auto;
+  max-width: 600px;
+  position: inherit;
+  top: -50px;
+  left: 0px;
+}
+
+

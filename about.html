@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Include the shared stylesheet -->
+    <title>About Us - Scarlet Summer Sports</title>
+</head>
+<body>
+    <!-- Persistent Header -->
+    <div id="header"></div>
+
+    <!-- Persistent Logo -->
+    <a href="index.html" id="logo-link">
+        <div id="logo-button"></div>
+    </a>
+
+    <!-- Navigation Buttons -->
+    <div id="ui-container">
+        <a href="index.html" class="nav-link"><button id="logo-button"></button></a>
+        <a href="schedule.html" class="nav-link"><button id="schedule-button"></button></a>
+        <a href="contact.html" class="nav-link"><button id="contact-button"></button></a>
+        <a href="about.html" class="nav-link"><button id="about-button"></button></a>
+        <a href="register.html" class="nav-link"><button id="register-button"></button></a>
+        <a href="location.html" class="nav-link"><button id="location-button"></button></a>
+        <a href="emanual.html" class="nav-link"><button id="emanual-button"></button></a>
+        <a href="testimonies.html" class="nav-link"><button id="testimonies-button"></button></a>
+    </div>
+
+    <!-- About Section -->
+    <div id="about-container">
+        <h1>About Scarlet Summer Sports</h1>
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-question">Who are we?</button>
+                <div class="faq-answer">
+                    Scarlet Summer Sports is an innovative organization dedicated to promoting health, fitness, and teamwork through structured sports programs and engaging activities.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What is our mission?</button>
+                <div class="faq-answer">
+                    Our mission is to foster a lifelong love for sports, fitness, and wellness by providing accessible programs that promote physical and mental health in a supportive and inclusive environment.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What is our vision for the future?</button>
+                <div class="faq-answer">
+                    We envision a world where every individual, regardless of age or ability, can benefit from the physical, emotional, and social advantages of sports and fitness.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Why was Scarlet Summer Sports created?</button>
+                <div class="faq-answer">
+                    Scarlet Summer Sports was created to bridge the gap between fitness and community engagement by offering a platform for enjoyment and personal growth.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Who are the founders of Scarlet Summer Sports?</button>
+                <div class="faq-answer">
+                    Scarlet Summer Sports was founded by passionate sports enthusiasts and fitness experts who share a common goal of empowering communities through physical activity.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Where are we located?</button>
+                <div class="faq-answer">
+                    Our headquarters are based in (location), but our programs and events span various locations to ensure accessibility for participants from all regions.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What is our main goal?</button>
+                <div class="faq-answer">
+                    Our main goal is to promote a holistic approach to health and fitness by integrating physical training, mental resilience, and community building into all our programs.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How do we promote physical and mental health?</button>
+                <div class="faq-answer">
+                    We offer structured courses, guided sports activities, and workshops designed to improve physical fitness while addressing mental well-being through mindfulness, stress management, and confidence-building exercises.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What makes us different from other sports organizations?</button>
+                <div class="faq-answer">
+                    Unlike traditional sports organizations, we focus on both the individual and the community. Our programs emphasize personal growth, inclusivity, and long-term benefits.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What types of sports do we focus on?</button>
+                <div class="faq-answer">
+                    We specialize in a diverse range of sports, including soccer, basketball, swimming, and track and field. Additionally, we offer tailored fitness programs for all skill levels.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What programs do we offer?</button>
+                <div class="faq-answer">
+                    Our programs include seasonal sports camps, weekly fitness workshops, personal coaching sessions, and community tournaments.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Are our programs suitable for all age groups?</button>
+                <div class="faq-answer">
+                    Yes, our programs are designed to cater to individuals of all ages and fitness levels, from young children exploring sports for the first time to adults looking to stay active.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do we offer any online courses or guides?</button>
+                <div class="faq-answer">
+                    Absolutely! We provide online courses and guides that include workout plans, nutrition tips, and skill-building exercises.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What is the structure of our sports camp?</button>
+                <div class="faq-answer">
+                    Our sports camp is divided into fun-filled sessions that combine skill-building, team activities, and personal challenges, balanced with learning and social interaction.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for FAQ toggle animation
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                button.classList.toggle('active');
+                answer.style.maxHeight = answer.style.maxHeight ? null : `${answer.scrollHeight}px`;
+            });
+        });
+    </script>
+</body>
+</html>

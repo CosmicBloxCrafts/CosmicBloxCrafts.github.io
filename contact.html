@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Include the shared stylesheet -->
+    <title>Contact Us - Scarlet Summer Sports</title>
+</head>
+<body>
+    <!-- Persistent Header -->
+    <div id="header"></div>
+
+    <!-- Persistent Logo -->
+    <a href="index.html" id="logo-link">
+        <div id="logo-button"></div>
+    </a>
+
+    <!-- Navigation Buttons -->
+    <div id="ui-container">
+        <a href="index.html" class="nav-link"><button id="logo-button"></button></a>
+        <a href="schedule.html" class="nav-link"><button id="schedule-button"></button></a>
+        <a href="contact.html" class="nav-link"><button id="contact-button"></button></a>
+        <a href="about.html" class="nav-link"><button id="about-button"></button></a>
+        <a href="register.html" class="nav-link"><button id="register-button"></button></a>
+        <a href="location.html" class="nav-link"><button id="location-button"></button></a>
+        <a href="emanual.html" class="nav-link"><button id="emanual-button"></button></a>
+        <a href="testimonies.html" class="nav-link"><button id="testimonies-button"></button></a>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact-container">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you. Reach out with your queries or suggestions!</p>
+
+        <form id="contact-form" onsubmit="sendEmail(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Our Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" value="christopher.belgrave-2020@hillviewcollege.edu.tt" readonly>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit" id="send-button">Send Email</button>
+        </form>
+    </div>
+
+    <script>
+        // Function to construct the Gmail URL and redirect the user
+        function sendEmail(event) {
+            event.preventDefault(); // Prevent the form from reloading the page
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Construct the Gmail URL
+            const gmailURL = `https://mail.google.com/mail/u/0/?fs=1&to=${email}&su=Contact%20Inquiry%20from%20${name}&body=${encodeURIComponent(message)}&tf=cm`;
+
+            // Redirect to the Gmail URL
+            window.open(gmailURL, '_blank');
+        }
+    </script>
+</body>
+</html>

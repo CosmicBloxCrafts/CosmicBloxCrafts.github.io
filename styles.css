@@ -26,8 +26,8 @@ body {
   position: absolute;
   left: 31px;
   top: 7px;
-  width: 60px;
-  height: 61px;
+  width: 100px;
+  height: 100px;
   background-image: url('./images/logo.png');
   background-size: contain;
   background-repeat: no-repeat;

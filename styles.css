@@ -24,10 +24,10 @@ body {
 /* Persistent Logo */
 #logo-button {
   position: absolute;
-  left: 31px;
-  top: 5px;
-  width: 200px;
-  height: 200px;
+  left: 26px;
+  top: 1px;
+  width: 150px;
+  height: 150px;
   background-image: url('./images/logo.png');
   background-size: contain;
   background-repeat: no-repeat;
